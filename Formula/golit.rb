@@ -7,14 +7,14 @@ class Golit < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/zeroedin/golit/releases/download/v#{version}/golit-darwin-arm64.tar.gz"
-      sha256 "686569f6727cb9ad8542fcd64833f1c4bec9594cbd1189ad6600efeb33c1fc80"
+      sha256 "6c26471d61b1bb980fc5661d50f2dbb4d1902a5493f56d7894a9ea7b8995c97e"
 
       def install
         bin.install "golit-darwin-arm64" => "golit"
       end
     else
       url "https://github.com/zeroedin/golit/releases/download/v#{version}/golit-darwin-amd64.tar.gz"
-      sha256 "2ce1c922375cbe48567375467874c9e9b16773783a36826d5f7629462c35e99a"
+      sha256 "2eee8bc94284317f87ec6b4d6a65424d1ee9c6f61c58570fb0564ee75b3852d1"
 
       def install
         bin.install "golit-darwin-amd64" => "golit"
@@ -25,14 +25,14 @@ class Golit < Formula
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/zeroedin/golit/releases/download/v#{version}/golit-linux-arm64.tar.gz"
-      sha256 "2a7e4c77fc863b00d00c24571abfc06af1e812b52d2a7e42ac7424d883fa9806"
+      sha256 "a0034f3a33f6817ef1fffbdd81c23faf7b01b77a698a44ae2294b3f1c9086e07"
 
       def install
         bin.install "golit-linux-arm64" => "golit"
       end
     else
       url "https://github.com/zeroedin/golit/releases/download/v#{version}/golit-linux-amd64.tar.gz"
-      sha256 "602574ff7202201335b561cbfb42270485769a49b3f1722858b60e6da64eee71"
+      sha256 "cc6a472c809988247a58f048d759dd0a486e4973c0bb627dfac542b313792e0e"
 
       def install
         bin.install "golit-linux-amd64" => "golit"
